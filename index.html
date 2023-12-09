@@ -159,7 +159,7 @@
                   <use href="img/feather-sprite.svg#shopping-cart" />
                 </svg>
               </a>
-              <a href="#" class="item-detail-button">
+              <a href="#" class="item-detail-button" @click.prevent="showProductDetail(index)">
                 <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <use href="img/feather-sprite.svg#eye" />
                 </svg>
@@ -251,16 +251,14 @@
         <div class="modal-content">
           <img src="img/products/1.jpg" alt="Product 1" />
           <div class="product-content">
-            <h3>Product 1</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit fugit harum vero quos asperiores amet quis ipsum recusandae unde, distinctio tenetur, error impedit porro velit?</p>
+            <h2>House blend</h2>
+            <p>Kopi dari Amerika Latin ini diperkaya rasa kacang-kacangan dan kakao yang kuat dan juga seimbang, serta sentuhan rasa manis yang muncul saat proses pemanggangan.</p>
             <div class="product-stars">
               <i data-feather="star"></i>
               <i data-feather="star"></i>
               <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
             </div>
-            <div class="product-price">IDR 30K <span>IDR 50K</span></div>
+            <div class="product-price">IDR Rp. 80.000</div>
             <a href="#"><i data-feather="shopping-cart"></i> <span>Add to cart</span></a>
           </div>
         </div>

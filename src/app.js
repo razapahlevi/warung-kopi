@@ -74,3 +74,20 @@ const rupiah = (number) => {
     minimumFractionDigits: 0,
     }).format(number);  
 };
+
+// Pada bagian app.js atau di bagian bawah HTML sebelum tutup body
+document.addEventListener("DOMContentLoaded", function () {
+    const eyeIcons = document.querySelectorAll(".item-detail-button");
+    const modal = document.getElementById("item-detail-modal");
+    const closeIcon = document.querySelectorAll(".close-icon");
+  
+    eyeIcons.forEach((icon) => {
+      icon.addEventListener("click", function () {
+        modal.style.display = "block";
+      });
+    });
+  
+    closeIcon.addEventListener("click", function () {
+      modal.style.display = "none";
+    });
+  });
